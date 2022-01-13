@@ -1,0 +1,76 @@
+
+
+:root{
+    --main-color: white;
+}
+
+body{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.btn i{
+    color: white;
+}
+
+.btn{
+    background-color: black;
+    padding: 0.75em 1em;
+    border-radius: 100%;
+}
+
+.btn:hover{
+   background-color: rgb(173, 146, 223);
+   animation: rotate 900ms 300ms ease-in-out infinite;
+}
+
+
+/* =========== */
+/* Dragable id */
+/* =========== */
+
+#dragable {
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    text-align: center;
+  }
+
+#dragable-header{
+    cursor: move;
+    z-index: 10;
+    background-color: transparent;
+    border-radius: 100%;
+    
+}
+
+
+/* ================== */
+/* Togglable classes */
+/* ================== */
+
+.dark-mode{
+    background-color: black;
+}
+
+.color-dark{
+    color: black !important;
+}
+
+.btn-mode{
+    background-color: white;
+}
+
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
