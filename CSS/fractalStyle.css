@@ -1,0 +1,13 @@
+canvas{
+    background-color: #3F3351;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+}
+
+#slider{
+    width: 360px;
+}

@@ -25,7 +25,7 @@ body{
 
 .btn:hover{
    background-color: rgb(173, 146, 223);
-   animation: rotate 900ms 300ms ease-in-out infinite;
+   animation: rotate 900ms 200ms ease-in-out infinite;
 }
 
 
@@ -42,13 +42,13 @@ body{
     text-align: center;
   }
 
-#dragable-header{
+/* #dragable-header{
     cursor: move;
     z-index: 10;
     background-color: transparent;
     border-radius: 100%;
     
-}
+} */
 
 
 /* ================== */
