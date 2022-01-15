@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../CSS/fractalStyle.css">
     <title>Fractal</title>
-    <a href="index.html">Home</a>
 </head>
 <body>
-    <input type="range" min="0" max="180" value="15" id="slider">
-    <div id="displayAngle"></div>
-    <canvas id="fCanvas" width="1900" height="900"></canvas>
+    <header>
+        <div class="container">
+            <a href="index.html">Home</a>
+        </div>
+        <input type="range" min="0" max="180" value="15" id="slider-angle" class="slider">
+        <div id="displayAngle"></div>
+        <input type="range" min="1" max="200" value="150" id="slider-length" class="slider">
+        <div id="displayLength"></div>
+        <input type="range" min="1" max="20" value="5" id="slider-branch" class="slider">
+        <div id="displayBranch"></div>
+        <input type="range" min="1" max="8" value="8" id="slider-left" class="slider">
+        <div id="displayRight"></div>
+        <input type="range" min="1" max="8" value="8" id="slider-right" class="slider">
+        <div id="displayLeft"></div>
+    </header>
+
+    <canvas id="fCanvas" width = "1" height="1"></canvas>
     <script src="../JS/fractal.js"></script>
 </body>
 </html>

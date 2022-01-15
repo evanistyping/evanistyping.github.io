@@ -6,11 +6,7 @@
 
 body{
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     min-height: 100vh;
-    margin: 0;
 }
 
 .btn i{
@@ -41,14 +37,6 @@ body{
     border: none;
     text-align: center;
   }
-
-/* #dragable-header{
-    cursor: move;
-    z-index: 10;
-    background-color: transparent;
-    border-radius: 100%;
-    
-} */
 
 
 /* ================== */

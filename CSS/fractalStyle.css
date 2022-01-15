@@ -1,13 +1,22 @@
 canvas{
     background-color: #3F3351;
-    margin: 0 auto;
-    padding: 0;
 }
 
 body{
     align-items: center;
 }
 
-#slider{
-    width: 360px;
+.slider{
+    width: 15%;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    background: transparent !important;
+    color: white;
+}
+a{
+    text-decoration: none;
+    padding: 0;
 }
