@@ -30,21 +30,21 @@ var disAng = document.getElementById("displayAngle");
 disAng.innerHTML = "Angle: " + ang;
 
 // function called when slider input changes, LESS LAGGY
-slider.addEventListener("change", function() {
-    ang = slider.value;
-    disAng.innerHTML = "Angle: " + ang;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    draw(canvas.width/2, 800, 150, 0, 5);
-})
+// slider.addEventListener("change", function() {
+//     ang = slider.value;
+//     disAng.innerHTML = "Angle: " + ang;
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     draw(canvas.width/2, 800, 150, 0, 5);
+// })
 
 
 // Live updates, MORE LAGGY
-// setInterval(function() {
-//     ang = slider.value;
-//     disAng.innerHTML = "Angle = " + ang;
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     draw(canvas.width/2, 800, 150, 0, 5);
-//     }, 100)
+setInterval(function() {
+    ang = slider.value;
+    disAng.innerHTML = "Angle = " + ang;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    draw(canvas.width/2, 800, 150, 0, 5);
+    }, 100)
 
 
 
