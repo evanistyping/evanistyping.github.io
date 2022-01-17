@@ -68,6 +68,10 @@ dispLeft.textContent = "Left modifier: " + leftMod;
 // Live updates every x ms, indicated by number at the end of setInterval() func;
 setInterval(function() {
 
+    //Dynamically change cavas size to fit scalled window
+    ctx.canvas.width  = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
+
     //Updating variables 
     ang = sliderAngle.value;
     leftMod = (sliderLeft.value)/10;
