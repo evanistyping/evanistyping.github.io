@@ -1,0 +1,219 @@
+
+$bg-dark0: #10002b;
+$bg-dark1: #240046;
+$bg-dark2: #3C096C;
+$bg-dark3: #5A189A;
+$bg-dark4: #7B2CBF;
+$bg-dark5:#9D4EDD;
+$text-light: #fff;
+$bg-light1: #FF6D00;
+$bg-light2: #FF7900;
+$bg-light3: #FF8500;
+$bg-light4: #FF9100;
+$bg-light5: #FF9E00;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.body-light-mode{
+    background: radial-gradient($bg-light5, $bg-light1) !important;
+
+}
+.h2-light-mode{
+    color: $text-light;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, $bg-light1) !important;
+    text-shadow: 0 0 10px $bg-light4, 0 0 20px $bg-light4, 0 0 40px $bg-light4, 0 0 80px $bg-light4, 0 0 160px $bg-light4, 0 0 320px $bg-light4 !important;
+}
+
+
+// Buttons
+#btn-mode{
+    color: $text-light;
+}
+#btn-mode:hover{
+    cursor: pointer;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+// End buttons
+// 
+
+
+
+// 
+// NavBar
+.navbar{
+    overflow: hidden;
+    background-color: transparent;
+}
+.dropdown{
+    // float: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: $text-light;
+    text-shadow: 0 0 5px $bg-dark4;
+    background-color: transparent;
+    padding: 14px 16px;
+    padding-right: 2em;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover , .navbar i:hover{
+    color: #fff;
+}
+.dropdown-content{
+    // visibility: hidden;
+    display: none;
+    // position: absolute;
+    // background-color: #f9f9f9;
+    min-width: 60px;
+    z-index: 1;
+}
+.dropdown-content a{
+    float: none;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-right: 2em;
+    padding-left: 2em;
+    
+}
+.fa-moon{
+    padding: 0.5em ;
+}
+.inline{
+    display: flex !important;
+}
+.rot {
+    transition: transform 0.1s ease;
+    transform: rotate(-90deg) !important;
+    }
+.rot2{
+    transition: transform 0.1s ease;
+    transform: rotate(0deg);
+}
+
+//Nav hover effect
+nav a.lines::before, nav a.lines::after{
+    position: absolute;
+    opacity: 0.5;
+    height: 2px;
+    width: 100%;
+    content: '';
+    background: $text-light;
+    transition: all 0.15s;
+}
+
+nav a.lines::before{
+    left: 0px;
+    top: 0px;
+}
+nav a.lines::after{
+    right: 0px;
+    bottom: 0px;
+}
+
+nav a{
+    position: relative;
+    z-index: 10;
+    margin-right: 10px;
+}
+
+nav a.lines:hover::after, nav a.lines:hover::before{
+    opacity: 1;
+    width: 2px;
+    height: 100%;
+}
+
+// End NavBar
+// 
+
+
+
+
+
+header{
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    a{
+        font-weight: bold;
+        color: $text-light;
+        text-transform: uppercase;
+    }
+}
+
+
+body{
+    background: $bg-dark1; //radial-gradient($bg-dark2, $bg-dark1)
+    // min-height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// Main Text
+// 
+h2{
+    position: relative;
+    width: 100%;
+
+    color: $text-light;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 0.7em;
+    outline: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, $bg-dark1);
+
+    text-shadow: 0 0 10px $bg-dark4, 0 0 20px $bg-dark4, 0 0 40px $bg-dark4, 0 0 80px $bg-dark4, 0 0 160px $bg-dark4, 0 0 320px $bg-dark4;
+}
+
+h2:hover{
+    cursor: cell;
+}
+
+video{
+    width: 50%;
+    box-shadow: 0 0 10px $bg-dark3, 0 0 20px $bg-dark3, 0 0 40px $bg-dark3, 0 0 80px $bg-dark3;
+}
+
+h3{
+    position: relative;
+    width: 100%;
+
+    color: $text-light;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 0.7em;
+    outline: none;
+
+    text-shadow: 0 0 10px $bg-dark4, 0 0 20px $bg-dark4, 0 0 40px $bg-dark4, 0 0 80px $bg-dark4, 0 0 160px $bg-dark4, 0 0 320px $bg-dark4;
+}

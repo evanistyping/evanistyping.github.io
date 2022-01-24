@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fade.css">
+
+    <title>Index</title>
+</head>
+
+<body id="body-tog">
+
+
+    <header>
+            <nav class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i id="cerret" class="fas fa-angle-double-down fa-3x rot2" onclick="dropdown()"></i>
+                        </button>
+                        <div id="menu" class="dropdown-content">
+
+                            <a href="index.html" class="fade-in1 lines">home</a>
+
+                            <a href="" class="fade-in2 lines">frac</a>
+
+                            <a href="clips.html" class="fade-in3 lines">clips</a>
+
+                            <a href="" class="fade-in4 lines">contact</a>
+
+                            <a id="btn-mode" class="fas fa-1x fa-moon fade-in5" onclick="toggleModes()"></a>
+                        </div>
+                    </div>
+            </nav>
+    </header>
+
+    <main>
+        
+            <video controls  disablePictureInPicture controlsList="nodownload">
+                <source src="/images/spinEternally.mp4" type="video/mp4">
+            </video>
+            <h3>That part of "spin eternally" that nobody believes I passed</h3>
+            <!-- <div class="orbit"></div> -->
+        
+    </main>
+    
+    <script src="js/switch.js"></script>
+
+</body>
+</html>

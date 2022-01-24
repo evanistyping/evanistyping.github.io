@@ -1,0 +1,186 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.body-light-mode {
+  background: radial-gradient(#FF9E00, #FF6D00) !important;
+}
+
+.h2-light-mode {
+  color: #fff;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #FF6D00) !important;
+  text-shadow: 0 0 10px #FF9100, 0 0 20px #FF9100, 0 0 40px #FF9100, 0 0 80px #FF9100, 0 0 160px #FF9100, 0 0 320px #FF9100 !important;
+}
+
+#btn-mode {
+  color: #fff;
+}
+
+#btn-mode:hover {
+  cursor: pointer;
+}
+
+#menu:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.dropdown {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-shadow: 0 0 5px #7B2CBF;
+  background-color: transparent;
+  padding: 14px 16px;
+  padding-right: 2em;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .navbar i:hover {
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.fa-moon {
+  padding: 0.5em;
+}
+
+.inline {
+  display: flex !important;
+}
+
+.rot {
+  transition: transform 0.1s ease;
+  transform: rotate(-90deg) !important;
+}
+
+.rot2 {
+  transition: transform 0.1s ease;
+  transform: rotate(0deg);
+}
+
+nav a.lines::before, nav a.lines::after {
+  position: absolute;
+  opacity: 0.5;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background: #fff;
+  transition: all 0.15s;
+}
+
+nav a.lines::before {
+  left: 0px;
+  top: 0px;
+}
+
+nav a.lines::after {
+  right: 0px;
+  bottom: 0px;
+}
+
+nav a {
+  position: relative;
+  z-index: 10;
+  margin-right: 10px;
+}
+
+nav a.lines:hover::after, nav a.lines:hover::before {
+  opacity: 1;
+  width: 2px;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body {
+  background: #240046;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  line-height: 0.7em;
+  outline: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #240046);
+  text-shadow: 0 0 10px #7B2CBF, 0 0 20px #7B2CBF, 0 0 40px #7B2CBF, 0 0 80px #7B2CBF, 0 0 160px #7B2CBF, 0 0 320px #7B2CBF;
+}
+
+h2:hover {
+  cursor: cell;
+}
+
+video {
+  width: 50%;
+  box-shadow: 0 0 10px #5A189A, 0 0 20px #5A189A, 0 0 40px #5A189A, 0 0 80px #5A189A;
+}
+
+h3 {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 7px;
+  line-height: 0.7em;
+  outline: none;
+  text-shadow: 0 0 10px #7B2CBF, 0 0 20px #7B2CBF, 0 0 40px #7B2CBF, 0 0 80px #7B2CBF, 0 0 160px #7B2CBF, 0 0 320px #7B2CBF;
+}
