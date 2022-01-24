@@ -1,6 +1,8 @@
 .fade-in1{
     animation-name: FadeIn1;
     animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
     transition-timing-function: linear;
     }
 
@@ -10,27 +12,34 @@
     }
     100% {
         opacity: 1;
+        visibility: visible;
     }
     }
 
     .fade-in2{
         animation-name: FadeIn2;
-        animation-duration: 2s;
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
         transition-timing-function: linear;
         }
     
         @keyframes FadeIn2 {
         0% {
             opacity: 0;
+            
         }
         100% {
             opacity: 1;
+            visibility: visible;
         }
         }
 
         .fade-in3{
             animation-name: FadeIn3;
-            animation-duration: 3s;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
             transition-timing-function: linear;
             }
         
@@ -40,12 +49,15 @@
             }
             100% {
                 opacity: 1;
+                visibility: visible;
             }
             }
 
             .fade-in4{
                 animation-name: FadeIn4;
-                animation-duration: 4s;
+                animation-duration: 1s;
+                animation-delay: 0.7s;
+                animation-fill-mode: forwards;
                 transition-timing-function: linear;
                 }
             
@@ -55,12 +67,15 @@
                 }
                 100% {
                     opacity: 1;
+                    visibility: visible;
                 }
                 }
 
                 .fade-in5{
                     animation-name: FadeIn5;
-                    animation-duration: 5s;
+                    animation-duration: 1.5s;
+                    animation-delay: 0.9s;
+                    animation-fill-mode: forwards;
                     transition-timing-function: linear;
                     }
                 
@@ -70,5 +85,6 @@
                     }
                     100% {
                         opacity: 1;
+                        visibility: visible;
                     }
                     }

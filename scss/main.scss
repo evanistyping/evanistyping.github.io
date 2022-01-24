@@ -73,7 +73,8 @@ $bg-light5: #FF9E00;
     margin-left: 2em;
 }
 .navbar a:hover , .navbar i:hover{
-    color: #fff;
+    text-shadow: 0 0 10px $bg-dark5, 0 0 20px $bg-dark5, 0 0 30px $bg-dark5 !important;
+    cursor: pointer;
 }
 .dropdown-content{
     // visibility: hidden;
@@ -95,11 +96,9 @@ $bg-light5: #FF9E00;
     margin-right: 0;
     
 }
-.fa-moon{
-    padding: 0.5em ;
-}
 .inline{
     display: flex !important;
+    visibility: hidden;
 }
 .rot {
     transition: transform 0.1s ease;
@@ -165,7 +164,7 @@ nav {
 
 
 body{
-    background: $bg-dark1; //radial-gradient($bg-dark2, $bg-dark1)
+    background:  radial-gradient($bg-dark2, $bg-dark0);
     // min-height: 100vh;
     overflow: hidden;
 }

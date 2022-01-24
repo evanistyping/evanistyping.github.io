@@ -3,6 +3,10 @@
           animation-name: FadeIn1;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   transition-timing-function: linear;
 }
 
@@ -12,6 +16,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -21,13 +26,18 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in2 {
   -webkit-animation-name: FadeIn2;
           animation-name: FadeIn2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   transition-timing-function: linear;
 }
 
@@ -37,6 +47,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -46,13 +57,18 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in3 {
   -webkit-animation-name: FadeIn3;
           animation-name: FadeIn3;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   transition-timing-function: linear;
 }
 
@@ -62,6 +78,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -71,13 +88,18 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in4 {
   -webkit-animation-name: FadeIn4;
           animation-name: FadeIn4;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   transition-timing-function: linear;
 }
 
@@ -87,6 +109,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -96,13 +119,18 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 .fade-in5 {
   -webkit-animation-name: FadeIn5;
           animation-name: FadeIn5;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   transition-timing-function: linear;
 }
 
@@ -112,6 +140,7 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -121,5 +150,6 @@
   }
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }
