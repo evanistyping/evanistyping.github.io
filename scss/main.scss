@@ -49,6 +49,7 @@ $bg-light5: #FF9E00;
 .navbar{
     overflow: hidden;
     background-color: transparent;
+    margin-top: 2em;
 }
 .dropdown{
     // float: left;
@@ -68,7 +69,8 @@ $bg-light5: #FF9E00;
     padding: 14px 16px;
     padding-right: 2em;
     font-family: inherit;
-    margin: 0;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .navbar a:hover , .navbar i:hover{
     color: #fff;
@@ -87,8 +89,10 @@ $bg-light5: #FF9E00;
     text-decoration: none;
     display: block;
     text-align: center;
+    padding-top: 1em;
     padding-right: 2em;
     padding-left: 2em;
+    margin-right: 0;
     
 }
 .fa-moon{
@@ -114,7 +118,7 @@ nav a.lines::before, nav a.lines::after{
     width: 100%;
     content: '';
     background: $text-light;
-    transition: all 0.15s;
+    transition: all 0.3s;
 }
 
 nav a.lines::before{
