@@ -139,7 +139,7 @@ nav a {
 
 body {
   background: radial-gradient(#3C096C, #10002b);
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 main {

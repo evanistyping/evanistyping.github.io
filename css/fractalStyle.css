@@ -1,0 +1,12 @@
+canvas{
+    background-color: #3F3351;
+    height: 5px;
+}
+
+body{
+    align-items: center;
+}
+
+.slider{
+    width: 15%;
+}

@@ -19,3 +19,16 @@ function toggleModes() {
         btn.classList.toggle("inline");
         cerret.classList.toggle("rot");
     }
+
+    // Index 2
+
+    function screenMode(){
+        var btn = document.getElementById("screen-button");
+        var main = document.getElementById("main-section");
+        var foot = document.getElementById("footer-section");
+
+        foot.classList.toggle("bg-dark");
+        main.classList.toggle("bg-dark");
+        btn.classList.toggle("fa-sun");
+        btn.classList.toggle("color-light");
+    }

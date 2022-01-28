@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main2.css">
+    <title>Evan Rodgers | Fractal</title>
+</head>
+<body>
+    <header>
+        <div class="container header-grid">
+            <nav>
+                <label for="toggle" class="label"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
+                <ul class="menu">
+                    <li class="lines"> <a href="index.html">Home</a> </li>
+                    <li class="lines"> <a href="fractalTree.html">Frac</a> </li>
+                    <li class="lines"> <a href="clips.html">Clips</a> </li>
+                    <li class="lines"> <a href="contact.html">About me</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="heroimage">
+        <div class="heroitems">
+            <canvas id="fCanvas" width = "1" height="1"></canvas>
+        </div>
+    </div>
+    <body>
+        <input type="range" min="0" max="180" value="15" id="slider-angle" class="slider">
+        <div id="displayAngle"></div>
+        <input type="range" min="1" max="200" value="150" id="slider-length" class="slider">
+        <div id="displayLength"></div>
+        <input type="range" min="1" max="20" value="5" id="slider-branch" class="slider">
+        <div id="displayBranch"></div>
+        <input type="range" min="0" max="8" value="8" id="slider-left" class="slider">
+        <div id="displayLeft"></div>
+        <input type="range" min="0" max="8" value="8" id="slider-right" class="slider">
+        <div id="displayRight"></div>
+    </body>
+        
+    
+
+    
+    <script src="JS/fractal.js"></script>
+</body>
+</html>

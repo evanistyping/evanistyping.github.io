@@ -5,47 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fade.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/main2.css">
 
-    <title>Index</title>
+    <title>Evan Rodgers | Clips</title>
 </head>
 
 <body id="body-tog">
 
 
     <header>
-            <nav class="navbar">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <i id="cerret" class="fas fa-angle-double-down fa-3x rot2" onclick="dropdown()"></i>
-                        </button>
-                        <div id="menu" class="dropdown-content">
-
-                            <a href="index.html" class="fade-in1 lines">home</a>
-
-                            <a href="" class="fade-in2 lines">frac</a>
-
-                            <a href="clips.html" class="fade-in3 lines">clips</a>
-
-                            <a href="" class="fade-in4 lines">contact</a>
-
-                            <a id="btn-mode" class="fas fa-1x fa-moon fade-in5" onclick="toggleModes()"></a>
-                        </div>
-                    </div>
+        <div class="container header-grid">
+            <nav>
+                <label for="toggle" class="label"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
+                <ul class="menu">
+                    <li class="lines"> <a href="index.html">Home</a> </li>
+                    <li class="lines"> <a href="fractalTree.html">Frac</a> </li>
+                    <li class="lines"> <a href="clips.html">Clips</a> </li>
+                    <li class="lines"> <a href="contact.html">About me</a> </li>
+                </ul>
             </nav>
+        </div>
     </header>
-
-    <main>
-        
-            <video id="beat-saber" controls  disablePictureInPicture controlsList="nodownload">
-                <source src="/images/spinEternally.mp4" type="video/mp4">
-            </video>
-            <h3>That part of "spin eternally" that nobody believes I passed</h3>
-            <!-- <div class="orbit"></div> -->
-        
-    </main>
-    
+    <div class="heroimage">
+        <div class="heroitems">
+            <div class="container">
+                <video id="beat-saber" controls  disablePictureInPicture controlsList="nodownload">
+                    <source src="/images/spinEternally.mp4" type="video/mp4">
+                </video>
+                <h3>That part of "spin eternally" that nobody believes I passed</h3>
+            </div>
+        </div>
+    </div>
     <script>
         var vid = document.getElementById("beat-saber");
         vid.volume = 0.1;

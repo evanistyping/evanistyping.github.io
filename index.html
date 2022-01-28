@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan Rodgers | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fade.css">
-
-    <title>Index</title>
+    <link rel="stylesheet" href="css/main2.css">
 </head>
 
-<body id="body-tog">
-
-
+<body>
     <header>
-            <nav class="navbar">
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <i id="cerret" class="fas fa-angle-double-down fa-3x rot2" onclick="dropdown()"></i>
-                        </button>
-                        <div id="menu" class="dropdown-content">
-
-                            <a href="index.html" class="fade-in1 lines">home</a>
-
-                            <a href="" class="fade-in2 lines">frac</a>
-
-                            <a href="clips.html" class="fade-in3 lines">clips</a>
-
-                            <a href="" class="fade-in4 lines">contact</a>
-
-                            <a id="btn-mode" class="fas fa-1x fa-moon fade-in5 " onclick="toggleModes()"></a>
-                        </div>
-                    </div>
+        <div class="container header-grid">
+            <nav>
+                <label for="toggle" class="label"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="toggle">
+                <ul class="menu">
+                    <li class="lines"> <a href="index.html">Home</a> </li>
+                    <li class="lines"> <a href="fractalTree.html">Frac</a> </li>
+                    <li class="lines"> <a href="clips.html">Clips</a> </li>
+                    <li class="lines"> <a href="contact.html">About me</a> </li>
+                </ul>
             </nav>
+        </div>
     </header>
-
-    <main>
-        
-            <h2 id="h2-tog">Evan ROdgers</h2>
-            <!-- <div class="orbit"></div> -->
-        
+    <div class="heroimage">
+        <div class="heroitems">
+            <div class="container">
+                <h2 class="glow">Evan Rodgers</h2>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <main id="main-section">
+        <button id="screen-button" onclick="screenMode()" class="fas fa-moon"></button>
+        <section class="main-padding">
+            <div class="container main-grid">
+                <div class="sideleft">
+                    <h4 class="sub-heading">Breif Summary</h4>
+                    <h2 class="heading">About</h2>
+                    <p>
+                        I am currently a student at Western Washington University, studying computer science. My interest began senior year of high school while enrolled in an advanced computer science class. I enjoy working on computers, whether it be building one for my younger brother or programming in an IDE.
+                        I love a good challenge | puzzle.
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/evan-rodgers/" target="blank_" class="button">More about me</a>
+                    </p>
+                </div>
+                <div class="sideright">
+                    <img src="images/fremont.JPG" width="100%" alt="Read More Image">
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <section class="main-padding">
+            <div class="container">
+                <div class="feature">
+                    <h4 class="sub-heading">Interests </h4>
+                    <h2 class="heading">Hobby</h2>
+                </div>
+                <div class="feature-image">
+                    <img src="images/keyboard.jpg" alt="">
+                    <img src="images/vr.jpg" alt="">
+                    <img src="images/wall.jpg" alt="">
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <section class="newsletter">
+            <div class="container newsletter-grid">
+                <h1>Connect with me</h1>
+                    <a href="https://www.linkedin.com/in/evan-rodgers/" target="blank_" class="button"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+        <footer class="main-footer" id="footer-section">
+            <div class="container footer-grid">
+                <div class="footer">
+                    <h4 class="sub-heading"></h4>
+                    <p>24/7 Call us</p>
+                    <a href="">+ 1-555-555-5555</a>
+                </div>
+                <div class="footer">
+                    <h4 class="sub-heading">
+                        CONNECT WITH US
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore.</p>
+                </div>
+                <div class="footer">
+                    <h4 class="sub-heading">CONNECT WITH US</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Maxime, odio. </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <i class="far fa-copyright">Copyright 2022 All rights reserved | Evan Rodgers</i>
+            </div>
+        </footer>
     </main>
-    
     <script src="js/switch.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
