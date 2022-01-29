@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/main2.css">
     <title>Evan Rodgers | Fractal</title>
 </head>
+
 <body>
     <header>
         <div class="container header-grid">
@@ -25,25 +27,18 @@
     </header>
     <div class="heroimage">
         <div class="heroitems">
-            <canvas id="fCanvas" width = "1" height="1"></canvas>
+            <canvas id="fCanvas" width="1" height="1"></canvas>
         </div>
     </div>
-    <body>
-        <input type="range" min="0" max="180" value="15" id="slider-angle" class="slider">
-        <div id="displayAngle"></div>
-        <input type="range" min="1" max="200" value="150" id="slider-length" class="slider">
-        <div id="displayLength"></div>
-        <input type="range" min="1" max="20" value="5" id="slider-branch" class="slider">
-        <div id="displayBranch"></div>
-        <input type="range" min="0" max="8" value="8" id="slider-left" class="slider">
-        <div id="displayLeft"></div>
-        <input type="range" min="0" max="8" value="8" id="slider-right" class="slider">
-        <div id="displayRight"></div>
-    </body>
-        
-    
 
-    
+    <body>
+        <button class="grow-button" onclick="grow()">GROW</button>
+    </body>
+
+
+
+
     <script src="JS/fractal.js"></script>
 </body>
+
 </html>

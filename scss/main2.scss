@@ -189,7 +189,7 @@ a {
         width: 80%;
         left: 10%;
         position: absolute;
-        background-color: #000000a4;
+        background-color: #000000d3;
         max-height: 0;
         overflow: hidden;
     }
@@ -246,7 +246,10 @@ a {
         margin-bottom: 20px;
     }
     .footer {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
+        h4{
+            margin-bottom: 2em;
+        }
     }
     button {
         margin-top: 1em !important;
@@ -266,7 +269,7 @@ a {
     .newsletter-grid,
     .footer-grid,
     .main-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     .footer-grid {
         display: block;
@@ -277,8 +280,8 @@ a {
 }
 
 @media (max-width: 480px) {
-    .heroitems h1 {
-        font-size: 30px;
+    .heroitems h2 {
+        font-size: 25px;
     }
     .heroitems p {
         font-size: 20px;
@@ -330,16 +333,18 @@ button {
 
 .feature {
     text-align: center;
+    margin-bottom: 80px;
 }
 
-.feature-image img {
+.feature-image.feature-item {
     width: 300px;
     height: auto;
     margin: 1em;
 }
 .feature-image{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
 }
 
 .newsletter {
@@ -380,11 +385,14 @@ h3{
 .footer {
     text-align: center;
     margin-bottom: 4em;
-    flex: 1;
+    h4{
+        margin-bottom: 2em;
+    }
 }
 
 .footer-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main-footer {
@@ -474,5 +482,12 @@ nav li.lines:hover::after, nav li.lines:hover::before{
 }
 
 #fCanvas{
-    margin-top: 14em;
+    height: 100vh;
+}
+.grow-button{
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    width: 80px;
+    z-index: 10;
 }

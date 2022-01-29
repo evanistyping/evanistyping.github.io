@@ -4,7 +4,10 @@ var ctx = canvas.getContext("2d");
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
-function draw(startX, startY, len, angle, branchWidth){
+function draw(startX, startY, len, angle, branchWidth, i, j){
+
+    ctx.strokeStyle = `rgb(0, ${Math.floor(255 * i)} , ${Math.floor(255 * j)})`;
+
     ctx.lineWidth = branchWidth;
     ctx.beginPath();
     ctx.save();
@@ -20,88 +23,35 @@ function draw(startX, startY, len, angle, branchWidth){
         return;
     }
     
-    draw(0, -len, len*leftMod, -ang, branchWidth*0.8)
-    draw(0, -len, len*rightMod, +ang, branchWidth*0.8)
+    draw(0, -len, len*leftMod, -ang, branchWidth*0.8 , i+0.5 , j+0.5)
+    draw(0, -len, len*rightMod, +ang, branchWidth*0.8 , i+0.5 , j+0.5)
 
     ctx.restore();
 }
 
 
-//FRACTAL VARIABLES;
-//
-//Grabs sliders by #id;
-//grabs each display div by #id;
-//Also initializes each modifier to a basic value;
-
-//Angle Slider
-var sliderAngle = document.getElementById("slider-angle");
-var ang = 15;
-var dispAng = document.getElementById("displayAngle");
-dispAng.textContent = "Angle: " + ang;
-
-//Length Slider
-var sliderLength = document.getElementById("slider-length");
-var sLen = 150
-var dispLen = document.getElementById("displayLength");
-dispLen.textContent = "Length: " + sLen;
-
-//Branch width slider
-var sliderBranch = document.getElementById("slider-branch");
-var branchWid = 5;
-var dispBranch = document.getElementById("displayBranch");
-dispBranch.textContent = "Thickness: " + branchWid;
-
-//Right length modifier
-var sliderRight = document.getElementById("slider-right");
-var rightMod = 0.8;
-var dispRight = document.getElementById("displayRight");
-dispRight.textContent = "Right modifier: " + rightMod;
-
-//Left length modifier
-var sliderLeft = document.getElementById("slider-left");
-var leftMod = 0.8;
-var dispLeft = document.getElementById("displayLeft");
-dispLeft.textContent = "Left modifier: " + leftMod;
+var ang;
+var rightMod;
+var leftMod;
 
 
+function grow(){
 
-// Live updates every x ms, indicated by number at the end of setInterval() func;
-// setInterval(function() {
+    //reset color mods
+    var i = 1;
+    var j = 1;
 
-//     //Dynamically change cavas size to fit scalled window
-//     ctx.canvas.width  = window.innerWidth;
-//     ctx.canvas.height = window.innerHeight;
+    //Reset canvas width to fit window size
+    ctx.canvas.width  = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
 
-//     //Updating variables 
-//     ang = sliderAngle.value;
-//     leftMod = (sliderLeft.value)/10;
-//     rightMod = (sliderRight.value)/10;
-//     sLen = sliderLength.value;
-//     branchWid = sliderBranch.value;
-
-//     //Printing slider values
-//     dispAng.textContent = "Angle: " + ang;
-//     dispLeft.textContent = "Left modifier: " + leftMod;
-//     dispRight.textContent = "Right modifier: " + rightMod;
-//     dispBranch.textContent = "Thickness: " + branchWid;
-//     dispLen.textContent = "Length: " + sLen;
-
-//     //clear canvas and print updated values
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     draw(canvas.width/2, canvas.height/1.2, sLen, 0, branchWid);
-//     }, 50)
-
-//OLD EVENT LISTENER METHOD; JUST IN CASE setInterval is too laggy;
-
-// function called when slider input changes, ANGLE
-sliderLeft.addEventListener("change", function() {
-    ang = sliderAngle.value;
-    dispAng.textContent = "Angle: " + ang;
-    dispLeft.textContent = "Left modifier: " + leftMod;
-    dispRight.textContent = "Right modifier: " + rightMod;
-    dispBranch.textContent = "Thickness: " + branchWid;
-    dispLen.textContent = "Length: " + sLen;
-
+    // Generate random length, width, anlge, and side modifiers
+    //random * (max-min)+min;
+    var len1 = Math.random() * (125 - 80) + 80;
+    var branch1 = Math.random() * (10 - 4) + 4;
+    ang = Math.random() * (60 - 10) + 10;
+    rightMod = Math.random() * (0.8-0.5) + 0.5;
+    leftMod = Math.random() * (0.9-0.4) + 0.4;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    draw(canvas.width/2, canvas.height/1.2, sLen, 0, branchWid);
-})
+    draw(canvas.width/2, canvas.height/1.2, len1, 0, branch1,i,j);
+}
