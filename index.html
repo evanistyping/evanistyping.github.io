@@ -17,13 +17,14 @@
     <header>
         <div class="container header-grid">
             <nav>
-                <label for="toggle" class="label"><i class="fas fa-bars"></i></label>
+                <label for="toggle" class="label"><i class="fas fa-bars" onclick="toggleLines()"></i></label>
                 <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li class="lines FadeIn1"> <a href="index.html">Home</a> </li>
-                    <li class="lines FadeIn2"> <a href="fractalTree.html">Frac</a> </li>
-                    <li class="lines FadeIn3"> <a href="clips.html">Clips</a> </li>
-                    <li class="lines FadeIn4"> <a href="">About me</a> </li>
+                    <li class="lines"> <a href="index.html">Home</a> </li>
+                    <li class="lines"> <a href="courses.html">Courses</a></li>
+                    <li class="lines"> <a href="hobby.html">Hobby</a></li>
+                    <li class="lines"> <a href="clips.html">Clips</a> </li>
+                    <li class="lines"> <a href="fractalTree.html">Frac</a> </li>
                 </ul>
             </nav>
         </div>
@@ -36,8 +37,8 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <main id="main-section">
-        <button id="screen-button" onclick="screenMode()" class="fas fa-moon"></button>
+    <main id="main-section" class="bg-light">
+        <button id="screen-button" onclick="screenMode()" class="fas fa-sun"></button>
         <section class="main-padding">
             <div class="container main-grid">
                 <div class="sideleft">
@@ -46,9 +47,8 @@
                     <p>
                         I am currently a student at Western Washington University, studying computer science. My
                         interest began senior year of high school while enrolled in an advanced computer science class.
-                        I enjoy working on computers, whether it be building one for my younger brother or programming
-                        in an IDE.
-                        I love a good challenge | puzzle.
+                        I enjoy working on computers, whether it be building one for my younger brother or programming.
+                        I love a good challenge and puzzle.
                     </p>
                     <p>
                         <a href="https://www.linkedin.com/in/evan-rodgers/" target="blank_" class="button">More about
@@ -60,57 +60,15 @@
                 </div>
             </div>
         </section>
-        <div class="clearfix"></div>
-        <section class="main-padding">
-            <div class="container">
-                <div class="feature">
-                    <h4 class="sub-heading">Academic history</h4>
-                    <h2 class="heading">Courses</h2>
-                </div>
-                <div class="feature-image">
-                    <div class="feature-item">
-                        <h2>Computer Mediated Communications</h2>
-                        <p>Introduction to the tools and technologies of modern responsive web design using HTML5 and
-                            CSS3; an introduction to JavaScript.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Computer programming I</h2>
-                        <p>Introduction to algorithms, elements of a programming language, including data types,
-                            packages, control structures, procedures and functions, basic input and output, arrays and
-                            records, text files, strings, variant records.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Computer Programming and Linear Data Structures</h2>
-                        <p>Abstract data types, generics, access or pointer types, dynamic memory allocation, recursion,
-                            concurrent programming and linear data structures, including stacks, lists and queues.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Data Structures</h2>
-                        <p>Design and implementation of hash tables, general trees, search trees, balanced trees and
-                            graphs. Comparison of sorting algorithms. Evaluation of the best data structure for a
-                            particular task.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Computer Systems I</h2>
-                        <p>Binary data representation, the assembly and machine language representations of executable
-                            code, memory hierarchies, process memory organization, and program linking.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h2>Formal Lang & Functional Programming</h2>
-                        <p>Proof techniques. Introduction to the formal language classes and their machines, including
-                            regular languages and finite automata, context free languages and pushdown automata.</p>
-                    </div>
-                </div>
-        </section>
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> 
         <section class="newsletter">
             <div class="container newsletter-grid">
-                <h1>Connect with me</h1>
+                <!-- <h1>Connect with me</h1>
                 <a href="https://www.linkedin.com/in/evan-rodgers/" target="blank_" class="button"><i
-                        class="fab fa-linkedin-in"></i></a>
+                        class="fab fa-linkedin-in"></i></a> -->
             </div>
         </section>
-        <footer class="main-footer" id="footer-section">
+        <footer class="main-footer bg-light" id="footer-section">
             <div class="container footer-grid">
                 <div class="footer">
                     <h4 class="sub-heading"></h4>

@@ -53,6 +53,7 @@ nav a {
   text-transform: uppercase;
   width: 100%;
   letter-spacing: 0.2em;
+  padding: 1rem 2rem;
 }
 
 li {
@@ -63,7 +64,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   text-align: center;
   transition: 0.3s;
@@ -93,6 +94,12 @@ a {
   height: 100vh;
 }
 
+.heroimage2 {
+  background: radial-gradient(#3C096C, #10002b);
+  background-size: cover;
+  height: 20vh;
+}
+
 .main-padding {
   padding: 7em 0em;
 }
@@ -111,7 +118,6 @@ a {
 }
 
 .sideright img {
-  border: #240046 solid 30px;
   border-radius: 10px;
 }
 
@@ -141,6 +147,10 @@ a {
 }
 
 @media (max-width: 992px) {
+  nav li.lines::before, nav li.lines::after {
+    visibility: hidden;
+  }
+
   .feature-image {
     grid-template-columns: 1fr 1fr !important;
   }
@@ -173,7 +183,7 @@ a {
   }
 
   #toggle:checked + .menu {
-    max-height: 300px;
+    max-height: 600px;
   }
 
   header div .logo {
@@ -285,7 +295,8 @@ textarea,
   }
 }
 main {
-  background-color: #fff;
+  background-color: #000000ee;
+  color: #fff;
 }
 
 button {
@@ -312,9 +323,16 @@ button {
   background-color: #fff;
 }
 
-.bg-dark {
+.bg-light {
   background-color: #000000ee !important;
-  color: #fff;
+  color: #fff !important;
+  transition: all 0.6s;
+}
+
+.bg-dark {
+  background-color: #fff !important;
+  color: #000000ee !important;
+  transition: all 0.6s;
 }
 
 .feature {
@@ -335,9 +353,9 @@ button {
 }
 
 .newsletter {
-  padding: 2.4em;
+  padding: 0.5em;
   color: #fff;
-  background: #240046;
+  background: linear-gradient(to right, #7B2CBF, #5A189A, #3C096C, #240046, #10002b);
   overflow: hidden;
 }
 
@@ -381,7 +399,7 @@ h3 {
 
 .main-footer {
   padding: 4em 0em 0.9em 0em;
-  background: #f2f2f2;
+  background-color: #000000ee;
 }
 
 .copyright {
@@ -424,7 +442,7 @@ nav li.lines::before, nav li.lines::after {
   width: 100%;
   content: "";
   background: #fff;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 nav li.lines::before {
@@ -443,7 +461,7 @@ nav li {
 }
 
 nav li.lines:hover::after, nav li.lines:hover::before {
-  opacity: 1;
+  opacity: 0.6;
   width: 2px;
   height: 100%;
 }
@@ -452,13 +470,14 @@ nav li.lines:hover::after, nav li.lines:hover::before {
   position: absolute;
   margin-left: 25px;
   margin-top: 25px;
-  color: #3C096C;
+  color: #fff;
   border: none;
   background-color: transparent;
 }
 
 .color-light {
-  color: #fff !important;
+  color: #000000ee !important;
+  transition: all 0.8s;
 }
 
 #fCanvas {

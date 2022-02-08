@@ -74,6 +74,7 @@ nav a {
     text-transform: uppercase;
     width: 100%;
     letter-spacing: 0.2em;
+    padding: 1rem 2rem;
 }
 
 li{
@@ -85,7 +86,7 @@ nav {
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         justify-content: space-between;
         text-align: center;
         transition: 0.3s;
@@ -117,6 +118,12 @@ a {
     // margin-bottom: 25px;
 }
 
+.heroimage2{
+    background: radial-gradient($bg-dark2, $bg-dark0);
+    background-size: cover;
+    height: 20vh;
+}
+
 .main-padding {
     padding: 7em 0em;
 }
@@ -136,7 +143,6 @@ a {
 
 .sideright {
     img{
-        border: $bg-dark1 solid 30px;
         border-radius: 10px;
     }
 }
@@ -168,6 +174,10 @@ a {
 
 @media (max-width: 992px) {
 
+    nav li.lines::before, nav li.lines::after{
+        visibility: hidden;
+    }
+
     .feature-image{
         grid-template-columns: 1fr 1fr !important;
     }
@@ -197,7 +207,7 @@ a {
         opacity: 1;
     }
     #toggle:checked + .menu {
-        max-height: 300px;
+        max-height: 600px;
     }
     header div .logo {
         float: left;
@@ -296,7 +306,8 @@ a {
 }
 
 main{
-    background-color: $text-light;
+    background-color: $text-dark;
+    color: $text-light;
 }
 
 button {
@@ -323,12 +334,15 @@ button {
     background-color: $text-light;
 }
 
-// .bg-color {
-//     background-color: $text-light;
-// }
-.bg-dark{
+.bg-light{
     background-color: $text-dark !important;
-    color: $text-light;
+    color: $text-light !important;
+    transition: all 0.6s;
+}
+.bg-dark{
+    background-color: $text-light !important;
+    color: $text-dark !important;
+    transition: all 0.6s;
 }
 
 .feature {
@@ -348,9 +362,9 @@ button {
 }
 
 .newsletter {
-    padding: 2.4em;
+    padding: 0.5em;
     color: $text-light;
-    background: $bg-dark1;
+    background: linear-gradient(to right, $bg-dark4, $bg-dark3, $bg-dark2, $bg-dark1, $bg-dark0);
     overflow: hidden;
 }
 
@@ -397,7 +411,7 @@ h3{
 
 .main-footer {
     padding: 4em 0em 0.9em 0em;
-    background: #f2f2f2;
+    background-color: $text-dark;
 }
 
 .copyright {
@@ -443,7 +457,7 @@ nav li.lines::before, nav li.lines::after{
     width: 100%;
     content: '';
     background: $text-light;
-    transition: all 0.2s;
+    transition: all 0.1s;
 }
 
 nav li.lines::before{
@@ -461,7 +475,7 @@ nav li{
 }
 
 nav li.lines:hover::after, nav li.lines:hover::before{
-    opacity: 1;
+    opacity: 0.6;
     width: 2px;
     height: 100%;
 }
@@ -472,13 +486,14 @@ nav li.lines:hover::after, nav li.lines:hover::before{
     position: absolute;
     margin-left: 25px;
     margin-top: 25px;
-    color: $bg-dark2;
+    color: $text-light;
     border: none;
     background-color: transparent;
 }
 
 .color-light{
-    color: $text-light !important;
+    color: $text-dark !important;
+    transition: all 0.8s;
 }
 
 #fCanvas{

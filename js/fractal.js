@@ -33,7 +33,8 @@ function draw(startX, startY, len, angle, branchWidth, i, j){
 var ang;
 var rightMod;
 var leftMod;
-
+// inital call for when page loads
+grow();
 
 function grow(){
 
