@@ -115,6 +115,7 @@ a {
 }
 .sideleft p {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .sideright img {
@@ -254,6 +255,15 @@ textarea,
 
   #screen-button {
     width: 10%;
+  }
+
+  .course-carousel {
+    width: 100% !important;
+  }
+
+  .course-item {
+    padding: none;
+    font-size: 15px;
   }
 }
 @media (max-width: 600px) {
@@ -490,4 +500,22 @@ nav li.lines:hover::after, nav li.lines:hover::before {
   left: 48%;
   width: 80px;
   z-index: 10;
+}
+
+.course-grid {
+  width: 100%;
+  height: 75.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-carousel {
+  width: 50%;
+}
+
+.course-item {
+  text-align: center;
+  padding: 5em 5em;
 }
