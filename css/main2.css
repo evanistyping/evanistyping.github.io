@@ -22,6 +22,7 @@ body {
   margin: 0px;
   padding: 0px;
   font: 20px/1.5 "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -279,6 +280,7 @@ textarea,
 
   .project-grid {
     grid-template-columns: 1fr !important;
+    overflow: hidden;
   }
 
   .ascii-link {

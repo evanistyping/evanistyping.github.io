@@ -1,7 +1,5 @@
 // The gradient
-// const density = "Ñ@#W$9876543210?!abc;:+=-,._ ";
-
-const density = "         _.'`,-=+:;cba!?0123456789$W#@Ñ";
+const density = "      _.'`,-=+:;cba!?0123456789$W#@Ñ";
 
 var button = document.getElementById("button");
 var run = true;
@@ -21,7 +19,6 @@ canvas.style.display = 'none';
 
 // VIDEO
 // ACCESSING CAMERA CODE - STACK OVERFLOW
-var front = false;
 var video = document.querySelector('video');
 video.style.display = "none";
 var constraints = { video: { width: 64, height: 64 } };
