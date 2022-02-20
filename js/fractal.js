@@ -6,7 +6,7 @@ ctx.canvas.height = window.innerHeight;
 
 function draw(startX, startY, len, angle, branchWidth, i, j){
 
-    ctx.strokeStyle = `rgb(0, ${Math.floor(255 * i)} , ${Math.floor(255 * j)})`;
+    // ctx.strokeStyle = `rgb(0, ${Math.floor(255 * i)} , ${Math.floor(255 * j)})`;
 
     ctx.lineWidth = branchWidth;
     ctx.beginPath();

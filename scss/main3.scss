@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+#ascii{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:14px;
+    line-height:8px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+body{
+    a{
+        font: 20px/1.5 "Nunito", sans-serif;
+        color: white;
+
+    }
+    background-color: rgb(15, 13, 13);
+    // text-align: center;
+}
+
+.center{
+    width: 550px;
+    display: inline-block;
+    position: relative;
+}
+
+main{
+    text-align: center;
+    margin-top: 5em;
+    p{
+        color: white;
+    }
+}
+
+.tutorial{
+    font: 20px/1.5 "Nunito", sans-serif;
+
+    margin-top: 30em;
+    color: white;
+    text-align: left;
+}
+
+.margin{
+    margin-top: 2em;
+}

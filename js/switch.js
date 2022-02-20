@@ -8,13 +8,14 @@
 //     h2.classList.toggle("h2-light-mode");
 //     }
 
-    // Index 2
 
     function screenMode(){
         let btn = document.getElementById("screen-button");
         let main = document.getElementById("main-section");
         let foot = document.getElementById("footer-section");
+        let hero = document.getElementById("hero");
 
+        hero.classList.toggle("bg-dark");
         foot.classList.toggle("bg-dark");
         main.classList.toggle("bg-dark");
         btn.classList.toggle("fa-sun");

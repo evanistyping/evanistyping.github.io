@@ -1,0 +1,80 @@
+
+
+
+
+
+
+$color1: #e01e37;
+$color2: #da1e37;
+$color3: #c71f37;
+$color4: #bd1f36;
+$color5: #b21e35;
+$color6: #a71e34;
+$color7: #a11d33;
+$color8: #85182a;
+$color9: #6e1423;
+$color10: #641220;
+
+$black: black;
+$white: #eee;
+
+
+
+
+
+.logo{
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    text-align: left;
+}
+
+body{
+    background-color: $white;
+    font: 20px/1.5 "Nunito", sans-serif;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+header {
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    padding: 2em 4em;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+li{
+    width: 100%;
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        text-align: right;
+        transition: 0.3s;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        opacity: 0.6;
+        color: $color10;
+    }
+}

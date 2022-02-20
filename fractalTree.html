@@ -12,21 +12,29 @@
 
 <body>
     <header>
-        <div class="container header-grid">
+        <div class="header-grid">
+            <style>
+                .logo a{
+                    /* text-decoration: none; */
+                    color: white;
+                    text-transform: uppercase;
+                }
+                .logo a:hover{
+                    color: black;
+                }
+            </style>
+            <div class="logo">EVAN RODGERS <a href="index.html">Home</a></div>
+            
             <nav>
-                <label for="toggle" class="label"><i class="fas fa-bars"></i></label>
+                <label for="toggle" class="label"><i class="fas fa-bars" ></i></label>
                 <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li class="tl lines"> <a href="index.html">Home</a> </li>
-                    <li class="tl lines"> <a href="courses.html">Courses</a></li>
-                    <li class="tl lines"> <a href="hobby.html">Hobby</a></li>
-                    <li class="tl lines"> <a href="clips.html">Clips</a> </li>
-                    <li class="tl lines"> <a href="fractalTree.html">Frac</a> </li>
+                    
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="heroimage">
+    <div class="heroimage bg-light">
         <div class="heroitems">
             <canvas id="fCanvas" width="1" height="1"></canvas>
         </div>
@@ -34,8 +42,8 @@
 
     <body>
         <button class="grow-button" onclick="grow()">GROW</button>
-    </body>
 
+    </body>
 
 
 

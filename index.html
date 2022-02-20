@@ -5,45 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan Rodgers | Home</title>
+    <title>Evan Rodgers | Student</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/fade.css">
 </head>
 
 <body>
     <header>
-        <div class="container header-grid">
+        <div class="header-grid">
+            
+            <div class="logo" data-anijs="if: click, do: shake animated">EVAN RODGERS</div>
             <nav>
-                <label for="toggle" class="label"><i class="fas fa-bars" onclick="toggleLines()"></i></label>
+                <label for="toggle" class="label"><i class="fas fa-bars" ></i></label>
                 <input type="checkbox" id="toggle">
                 <ul class="menu">
-                    <li class="lines"> <a href="index.html">Home</a> </li>
-                    <li class="lines"> <a href="courses.html">Courses</a></li>
-                    <li class="lines"> <a href="hobby.html">Hobby</a></li>
-                    <li class="lines"> <a href="clips.html">Clips</a> </li>
-                    <li class="lines"> <a href="fractalTree.html">Frac</a> </li>
+                    <li><button id="screen-button" onclick="screenMode()" class="fas fa-sun"></button></li>
+                    <li class="lines"> <a href="#hero">Home</a> </li>
+                    <li class="lines"> <a href="#main-section">About</a> </li>
+                    <li class="lines"> <a href="#courses">Courses</a></li>
+                    <li class="lines"> <a href="#footer-section">Contact</a> </li>
+                    <li class="lines drpdwn"> <a href="#projects">Projects</a> </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="heroimage">
+    <div id="hero" class="heroimage bg-light">
         <div class="heroitems">
-            <div class="container">
-                <h2 id="main-h2" class="glow">Evan Rodgers</h2>
-            </div>
+            
+            <img class="absolute" src="images/skull.svg" alt="" width="500" data-anijs="if: click, do: tada animated">
         </div>
     </div>
-    <div class="clearfix"></div>
-    <section class="newsletter"></section>
     <main id="main-section" class="bg-light">
-        <button id="screen-button" onclick="screenMode()" class="fas fa-sun"></button>
+        
         <section class="main-padding">
             <div class="container main-grid">
-                <div class="sideleft">
-                    <h4 class="sub-heading">Breif Summary</h4>
+                    
+                <div class="sideleft1">
                     <h2 class="heading">About</h2>
                     <p>
                         I am currently a student at Western Washington University, studying computer science. My
@@ -51,118 +52,135 @@
                         I enjoy working on computers, whether it be building one for my younger brother or programming.
                         I love a good challenge and puzzle.
                     </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/evan-rodgers/" target="blank_" class="button">More about
-                            me</a>
-                    </p>
                 </div>
-                <div class="sideright">
-                    <img src="images/fremont.JPG" width="100%" alt="Read More Image">
+                <div class="sideright1">
+                    <img src="images/pointing.png" width="100%" alt="Read More Image">
                 </div>
             </div>
         </section>
+        <hr>
 
-
-        <section class="newsletter"></section>
-
-        <div class="course-grid">
-            <h4 class="sub-heading">Completed</h4>
-            <h2 class="heading">Courses</h2>
-            <div class="course-carousel">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="course-item">
-                                <h2>Computer Mediated Communications</h2>
-                                <p>Introduction to the tools and technologies of modern responsive web design using
-                                    HTML5
-                                    and
-                                    CSS3; an introduction to JavaScript.</p>
+        <div id="courses" class="main-padding"></div>
+        <div  class="course-grid">
+            <div class="sideleft2">
+                <img src="images/Keyboard.png" width="400px" alt="">
+            </div>
+            <div class="sideright2">
+                <h4 class="sub-heading">Completed</h4>
+                <h2 class="heading">Courses</h2>
+                <div class="course-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="course-item">
+                                    <h2>Computer Mediated Communications</h2>
+                                    <p>Introduction to the tools and technologies of modern responsive web design using
+                                        HTML5
+                                        and
+                                        CSS3; an introduction to JavaScript.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="course-item">
+                                    <h2>Computer programming I</h2>
+                                    <p>Introduction to algorithms, elements of a programming language, including data types,
+                                        packages, control structures, procedures and functions, basic input and output,
+                                        arrays
+                                        and
+                                        records, text files, strings, variant records.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="course-item">
+                                    <h2>Computer Programming and Linear Data Structures</h2>
+                                    <p>Abstract data types, generics, access or pointer types, dynamic memory allocation,
+                                        recursion,
+                                        concurrent programming and linear data structures, including stacks, lists and
+                                        queues.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="course-item">
+                                    <h2>Data Structures</h2>
+                                    <p>Design and implementation of hash tables, general trees, search trees, balanced trees
+                                        and
+                                        graphs. Comparison of sorting algorithms. Evaluation of the best data structure for
+                                        a
+                                        particular task.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="course-item">
+                                    <h2>Computer Systems I</h2>
+                                    <p>Binary data representation, the assembly and machine language representations of
+                                        executable
+                                        code, memory hierarchies, process memory organization, and program linking.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="course-item">
+                                    <h2>Formal Lang & Functional Programming</h2>
+                                    <p>Proof techniques. Introduction to the formal language classes and their machines,
+                                        including
+                                        regular languages and finite automata, context free languages and pushdown automata.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="course-item">
-                                <h2>Computer programming I</h2>
-                                <p>Introduction to algorithms, elements of a programming language, including data types,
-                                    packages, control structures, procedures and functions, basic input and output,
-                                    arrays
-                                    and
-                                    records, text files, strings, variant records.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="course-item">
-                                <h2>Computer Programming and Linear Data Structures</h2>
-                                <p>Abstract data types, generics, access or pointer types, dynamic memory allocation,
-                                    recursion,
-                                    concurrent programming and linear data structures, including stacks, lists and
-                                    queues.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="course-item">
-                                <h2>Data Structures</h2>
-                                <p>Design and implementation of hash tables, general trees, search trees, balanced trees
-                                    and
-                                    graphs. Comparison of sorting algorithms. Evaluation of the best data structure for
-                                    a
-                                    particular task.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="course-item">
-                                <h2>Computer Systems I</h2>
-                                <p>Binary data representation, the assembly and machine language representations of
-                                    executable
-                                    code, memory hierarchies, process memory organization, and program linking.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="course-item">
-                                <h2>Formal Lang & Functional Programming</h2>
-                                <p>Proof techniques. Introduction to the formal language classes and their machines,
-                                    including
-                                    regular languages and finite automata, context free languages and pushdown automata.
-                                </p>
-                            </div>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </div>
 
+<hr>
+    <section>
+        <div id="projects" class="project-grid">
+            <div class="ascii-link">
+                <a href="ascii.html">
+                                    
+░█████╗░░██████╗░█████╗░██╗██╗░█████╗░░█████╗░███╗░░░███╗███████╗██████╗░░█████╗░
+██╔══██╗██╔════╝██╔══██╗██║██║██╔══██╗██╔══██╗████╗░████║██╔════╝██╔══██╗██╔══██╗
+███████║╚█████╗░██║░░╚═╝██║██║██║░░╚═╝███████║██╔████╔██║█████╗░░██████╔╝███████║
+██╔══██║░╚═══██╗██║░░██╗██║██║██║░░██╗██╔══██║██║╚██╔╝██║██╔══╝░░██╔══██╗██╔══██║
+██║░░██║██████╔╝╚█████╔╝██║██║╚█████╔╝██║░░██║██║░╚═╝░██║███████╗██║░░██║██║░░██║
+╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝╚═╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝
+                </a>
+            </div>
+            <div class="fractal-link">
+                <a href="fractalTree.html">
+                    <img src="images/tree.svg" width="300px" alt="">
+                </a>
+                <h2>Fractal</h2>
+            </div>
+        </div>
+    </section>
 
+    <hr>
 
-        <section class="newsletter"></section>
         <footer class="main-footer bg-light" id="footer-section">
             <div class="container footer-grid">
                 <div class="footer">
-                    <h4 class="sub-heading"></h4>
-                    <p>24/7 Call us</p>
-                    <a href="">+ 1-555-555-5555</a>
-                </div>
-                <div class="footer">
                     <h4 class="sub-heading">
-                        CONNECT WITH US
+                        Contact Me
                     </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore.</p>
+                    <a href="#" target="blank_" class="button" data-toggle="modal" data-target="#ContactForm">Contact</a>
                 </div>
                 <div class="footer">
                     <h4 class="sub-heading">CONNECT WITH ME</h4>
@@ -175,17 +193,55 @@
                 <p><i class="far fa-copyright"></i> Copyright 2022 All rights reserved | Evan Rodgers</p>
             </div>
         </footer>
+
+
+
+        <!-- #CONTACT MODAL -->
+        <div id="ContactForm" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Contact Form</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form class="contactform" method="POST" action="hotelcontact.html" autocomplete>
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" name="name" id="name" >
+                            <br>
+                            <label for="phone">Phone</label>
+                            <br>
+                            <input type="text" name="phone" id="phone">
+                            <br>
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" name="email" id="email">
+                            <br>
+                            <label for="message">Write Message</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <br>
+                            <input type="submit" value="Send Message" class="button">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
+
+
     <script src="js/switch.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/anijs-master/dist/anijs.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
