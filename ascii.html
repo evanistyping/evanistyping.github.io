@@ -11,42 +11,54 @@
 </head>
 
 <body>
-<a href="index.html">HOME</a>
-<!-- viedo source -->
+    <a href="index.html">HOME</a>
+    <!-- viedo source -->
     <video src="" width="64px" height="64px"></video>
     <br />
 
-<main>
-    <div class="center">
-        <div id="ascii"></div>
-        <canvas id="canv" width="150" height="150"></canvas>
-    </div>
-</main> 
-    
-<section class="tutorial">
-    <button id="button" onclick="stopCam()">Stop ASCII</button>
-    <h2>How it works</h2>
-    <p>
-        First of all, we need a way to access the users camera. Personally, I don't have much experience with cameras, so I used something from <a href="https://stackoverflow.com/questions/12024770/access-camera-from-a-browser"> StackOverflow</a>.
+    <main>
+        <div class="center">
+            <div id="ascii"></div>
+            <canvas id="canv" width="150" height="150"></canvas>
+        </div>
+    </main>
+
+    <section class="tutorial">
+        <button id="button" onclick="stopCam()">Stop ASCII</button>
+        <h2>How it works</h2>
+        <p>
+            First of all, we need a way to access the users camera. Personally, I don't have much experience with
+            cameras, so I used something from <a
+                href="https://stackoverflow.com/questions/12024770/access-camera-from-a-browser"> StackOverflow</a>.
         <div class="margin"></div>
-        We define a string which will be used as the graident for later: <br> 
+        We define a string which will be used as the graident for later: <br>
         <img src="images/gradient.PNG" alt=""> <br>
-        The individual characters within this string are what we will be printing in place of colors/pixels from each frame later on.<br>
+        The individual characters within this string are what we will be printing in place of colors/pixels from each
+        frame later on.<br>
         <div class="margin"></div>
-        We want to grab pixel data from each frame of our video, so we do just that. We call getImageData(), which provides an array of <a href="https://www.google.com/search?q=what+is+rgba&rlz=1C1ONGR_enUS932US932&sxsrf=APq-WBtOULSCCHYFUP4LNNdoUGfYKHLP6g%3A1645314931243&ei=c4MRYpeADs2S0PEP17aLmAg&ved=0ahUKEwjXhZTg-4z2AhVNCTQIHVfbAoMQ4dUDCA4&uact=5&oq=what+is+rgba&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgUIABCRAjIKCAAQgAQQhwIQFDIFCAAQkQIyBQgAEIAEMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjoHCAAQRxCwAzoHCAAQsAMQQzoGCAAQDRAKOgQIABANSgQIQRgASgQIRhgAUJMEWIIKYNsKaAFwAXgAgAFRiAGvBJIBATiYAQCgAQHIAQrAAQE&sclient=gws-wiz">rgba</a> values. <br>
+        We want to grab pixel data from each frame of our video, so we do just that. We call getImageData(), which
+        provides an array of <a
+            href="https://www.google.com/search?q=what+is+rgba&rlz=1C1ONGR_enUS932US932&sxsrf=APq-WBtOULSCCHYFUP4LNNdoUGfYKHLP6g%3A1645314931243&ei=c4MRYpeADs2S0PEP17aLmAg&ved=0ahUKEwjXhZTg-4z2AhVNCTQIHVfbAoMQ4dUDCA4&uact=5&oq=what+is+rgba&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEJECMgUIABCRAjIKCAAQgAQQhwIQFDIFCAAQkQIyBQgAEIAEMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjoHCAAQRxCwAzoHCAAQsAMQQzoGCAAQDRAKOgQIABANSgQIQRgASgQIRhgAUJMEWIIKYNsKaAFwAXgAgAFRiAGvBJIBATiYAQCgAQHIAQrAAQE&sclient=gws-wiz">rgba</a>
+        values. <br>
         The array of 'rgba' data we are given looks something like this: <br> <img src="images/rgba.PNG" alt=""> <br>
         Notice how each 'r' value is stored '4' indeces apart? Similarly for each other value. <br>
-         To put it simply, to access each red value we multiply the desired index by 4. EX: 0*4 = 0 for the first 'r' index, and 1*4 = 4 for the second 'r' index. <br>
-         To access the 'g' and 'b' values (we don't care about 'a'), we simply add on to our previous math: +1 for 'g' and +2 for 'b'. <br>
-         <div class="margin"></div>
-         Now we have an 'r' 'g' and 'b' value for a pixel from the current frame. We need to turn it into a character from the density string. <br>
-         One way to do this is to take the average of the r g b values and map the number to some index of the density string. <br>
-         So we do that with some math, and print the corrisponding character to a string called row. We itterate through the entire frame, grabbing 'rgb' values and mapping them to a character from the density string, until it's time to disply the frame of ASCII. <br>
-         We use element.textContent to display the string of ASCII that we have compiled.
-    </p>
-    <h3>YAY!!</h3>
+        To put it simply, to access each red value we multiply the desired index by 4. EX: 0*4 = 0 for the first 'r'
+        index, and 1*4 = 4 for the second 'r' index. <br>
+        To access the 'g' and 'b' values (we don't care about 'a'), we simply add on to our previous math: +1 for 'g'
+        and +2 for 'b'. <br>
+        <div class="margin"></div>
+        Now we have an 'r' 'g' and 'b' value for a pixel from the current frame. We need to turn it into a character
+        from the density string. <br>
+        One way to do this is to take the average of the r g b values and map the number to some index of the density
+        string. <br>
+        So we do that with some math, and print the corrisponding character to a string called row. We itterate through
+        the entire frame, grabbing 'rgb' values and mapping them to a character from the density string, until it's time
+        to disply the frame of ASCII. <br>
+        We use element.textContent to display the string of ASCII that we have compiled.
+        </p>
+        <h3>YAY!!</h3>
 
-</section>
+    </section>
 
 
     <script src="js/ascii.js"></script>
