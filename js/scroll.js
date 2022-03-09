@@ -24,7 +24,7 @@ $(function(){
 
 $(function(){
 
-    const sb = ScrollReveal({origin: 'bottom', distance: '100px', scale: '1', duration: '500', delay: 360, reset: false});
+    const sb = ScrollReveal({origin: 'bottom', distance: '100px', scale: '1', duration: '500', delay: 360, reset: true});
     // let sl = ScrollReveal({origin: 'left', distance: '200px', scale: '1', duration: '1000', delay: 100, reset: true});
 
     sb.reveal('.footer');
